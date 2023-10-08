@@ -1,0 +1,16 @@
+﻿<Window
+    x:Class="comp306_lab02_aunraza.PDFWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:PdfViewer="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:comp306_lab02_aunraza"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="PDFWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d" Closed="Window_Closed">
+    <Grid>
+        <PdfViewer:PdfViewerControl x:Name="pdfDocument" ItemSource="{Binding DocumentStream}" />
+    </Grid>
+</Window>
